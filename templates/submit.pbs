@@ -1,0 +1,20 @@
+#!/bin/sh -login
+
+#PBS -l {{ resources }}
+#PBS -e {{ folder }}/{{ jobname }}.e
+#PBS -o {{ folder }}/{{ jobname }}.o
+#PBS -N {{ jobname }}
+{% if buyin %}
+#PBS -A {{ buyin }}
+{% endif %}
+
+cd {{ folder }}
+
+{% if run %}
+./avida -s {{ seed }}
+{% endif %}
+{% if analyze %}
+./avida -a
+mkdir -p ../data
+tar -cvzf ../data/`basename {{ folder }}`.tar.gz data
+{% endif %}
