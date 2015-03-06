@@ -32,13 +32,19 @@ def git_clone_task(url, target_folder, wdir=WDIR, label=''):
 
     if not label:
         label = 'git_clone_{url}'.format(**locals())
+    
+    def clean_folder(folder):
+        try:
+            os.removedirs(folder)
+        except OSError:
+            pass
 
     return {'title': title_with_actions,
             'name': label,
             'actions': [(create_folder, [wdir]), cmd],
             'targets': [os.path.join(target_folder, 'build_avida'), target_folder],
             'uptodate': [run_once],
-            'clean': [clean_targets]}
+            'clean': [(clean_folder, [target_folder]), clean_targets]}
 
 @task_funcs.create_task_object
 def build_avida_task(folder, bindir=BINDIR, label=''):
