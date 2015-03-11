@@ -1,0 +1,5 @@
+.doit.db
+*.swp
+_bin/
+_work/
+*.pyc
