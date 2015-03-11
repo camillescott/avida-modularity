@@ -47,21 +47,42 @@ def git_clone_task(url, target_folder, wdir=WDIR, label=''):
             'clean': [(clean_folder, [target_folder]), clean_targets]}
 
 @task_funcs.create_task_object
-def build_avida_task(folder, bindir=BINDIR, label=''):
+def build_avida_task(folder, label=''):
 
     cmd_build = 'cd {folder} && ./build_avida'.format(**locals())
-    cmd_ln = 'ln -t {bindir} {folder}/cbuild/work/avida'.format(**locals())
 
     if not label:
         label = 'build_avida_{folder}'.format(**locals())
 
     return {'title': title_with_actions,
             'name': label,
-            'actions': [cmd_build, (create_folder, [bindir]), cmd_ln],
+            'actions': [cmd_build],
             'file_dep': [os.path.join(folder, 'build_avida')],
-            'targets': [os.path.join(bindir, 'avida')],
+            'targets': [os.path.join(folder, 'cbuild', 'work', 'avida')],
             'uptodate': [run_once],
             'clean': [clean_targets]}
+
+@task_funcs.create_task_object
+def link_avida_task(folder, bindir=BINDIR, label=''):
+
+    files = ['avida', 'analyze.cfg', 'avida.cfg', 'default-heads.org',
+             'environment.cfg', 'events.cfg', 'instset-heads.cfg']
+    d_files = [os.path.join(bindir, fn) for fn in files]
+    t_files = [os.path.join(folder, 'cbuild', 'work', fn) for fn in files]
+    cmd = 'ln -t {bindir} {t_files}'.format(bindir=bindir,
+                                            t_files=' '.join(t_files))
+
+    if not label:
+        label = 'link_avida_{folder}'.format(**locals())
+
+    return {'title': title_with_actions,
+            'name': label,
+            'actions': [(create_folder, [bindir]), cmd],
+            'file_dep': t_files,
+            'targets': d_files,
+            'uptodate': [run_once],
+            'clean': [clean_targets]}
+
 
 
 def main():
@@ -69,7 +90,8 @@ def main():
     args, doit_args = parser.parse_known_args()
 
     bin_tasks = [git_clone_task(AVIDA_URL, os.path.join(WDIR, 'avida')),
-                build_avida_task(os.path.join(WDIR, 'avida'))]
+                build_avida_task(os.path.join(WDIR, 'avida')),
+                link_avida_task(os.path.join(WDIR, 'avida'))]
 
     task_funcs.run_tasks(bin_tasks, doit_args)
 
