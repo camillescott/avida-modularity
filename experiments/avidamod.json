@@ -1,0 +1,175 @@
+{ "experiment-name": "avida-genetic-architecture",
+    "authors": ["Camille Scott", "Alita Burmeister"],
+    "description": " ",
+
+    "shared-config": {
+        "events": {
+            "file": "avidamod-events.cfg",
+            "config": [
+                "u begin Inject avidamod-ancestor.org",
+                "u 0:250:end PrintAverageData",
+                "u 0:250:end PrintDominantData",
+                "u 0:250:end PrintStatsData",
+                "u 0:250:end PrintCountData",
+                "u 0:250:end PrintTasksData",
+                "u 0:250:end PrintTimeData",
+                "u 0:250:end PrintResourceData",
+                "u 250:250:end PrintErrorData",
+                "u 250:250:end PrintVarianceData",
+                "u 500000 SavePopulation",
+                "g 0:250:end SavePopulation",
+                "u 500000 Exit"
+            ]
+        },
+
+        "analyze": {
+            "file": "avidamod-analyze.cfg",
+            "config": [
+                "LOAD run-data/detail-500000.spop",
+                "LOAD_RESOURCES run-data/resource.dat",
+                "FIND_LINEAGE num_cpus",
+                "RECALC use_resources",
+                "MAP_TASKS dom_lineage/ update_born task.0",
+                "DETAIL dom_lineage_orgs.dat update_born id merit efficiency fitness gest_time"
+            ]
+        },
+
+        "instructions": {
+            "file": "avidamod-inst-set.cfg",
+            "INSTSET": "heads_avidamod:hw_type=0",
+            "INST": ["nop-A",
+                     "nop-B",
+                     "nop-C",
+                     "if-n-equ",
+                     "if-less",
+                     "if-label",
+                     "mov-head",
+                     "jmp-head",
+                     "get-head",
+                     "set-flow",
+                     "shift-r",
+                     "shift-l",
+                     "inc",
+                     "dec",
+                     "push",
+                     "pop",
+                     "swap-stk",
+                     "swap",
+                     "add",
+                     "sub",
+                     "nand",
+                     "IO",
+                     "h-search",
+                     "IO-Feedback"] 
+        },
+
+        "ancestor" : {
+            "file:": "avidamod-ancestor.org",
+            "length": 100, 
+            "config": ["nop-C"] 
+        },
+
+        "environment": {
+            "file": "avidamod-environment.cfg",
+            "config": ["REACTION  ANDN andn  process:value=3.0:type=pow  requisite:max_count=3"] 
+        },
+
+        "avida": {
+            "file": "avidamod-avida.cfg",
+            "config": {
+                "DATA_DIR": "run-data",
+                "EVENT_FILE": "avidamod-events.cfg",
+                "ANALYZE_FILE": "avidamod-analyze.cfg",
+                "ENVIRONMENT_FILE": "avidamod-environment.cfg",
+                "INST_SET": "avidamod-inst-set.cfg",
+                "IMPLICIT_REPRO_END": 1,
+                "LOG_LINEAGES": 1,
+                "LINEAGE_CREATION_METHOD": 7,
+                "TRACE_EXECUTION": 0
+            }
+        }
+    },
+
+    "experiments": [
+        { "name": "all_mutations_0",
+            "description": "",
+            "config": {
+                "DIV_MUT_PROB": 0.0015,
+                "DIV_INS_PROB": 0.0015,
+                "DIV_DEL_PROB": 0.0015,
+                "DIVIDE_INS_PROB": 0.03,
+                "DIVIDE_DEL_PROB": 0.03
+            }
+        },
+        { "name": "all_mutations_1",
+            "description": "",
+            "config": {
+                "DIV_MUT_PROB": 0.0025,
+                "DIV_INS_PROB": 0.0025,
+                "DIV_DEL_PROB": 0.0025,
+                "DIVIDE_INS_PROB": 0.05,
+                "DIVIDE_DEL_PROB": 0.05
+            }
+        },
+        { "name": "all_mutations_2",
+            "description": "",
+            "config": {
+                "DIV_MUT_PROB": 0.0035,
+                "DIV_INS_PROB": 0.0035,
+                "DIV_DEL_PROB": 0.0035,
+                "DIVIDE_INS_PROB": 0.07,
+                "DIVIDE_DEL_PROB": 0.07
+            }
+        },
+        { "name": "all_mutations_3",
+            "description": "",
+            "config": {
+                "DIV_MUT_PROB": 0.0045,
+                "DIV_INS_PROB": 0.0045,
+                "DIV_DEL_PROB": 0.0045,
+                "DIVIDE_INS_PROB": 0.09,
+                "DIVIDE_DEL_PROB": 0.09
+            }
+        },
+        { "name": "per_genome_mutations_0",
+            "description": "",
+            "config": {
+                "DIVIDE_INS_PROB": 0.03,
+                "DIVIDE_DEL_PROB": 0.03,
+                "DIVIDE_MUT_PROB": 0.03
+            }
+        },
+        { "name": "per_genome_mutations_1",
+            "description": "",
+            "config": {
+                "DIVIDE_INS_PROB": 0.05,
+                "DIVIDE_DEL_PROB": 0.05,
+                "DIVIDE_MUT_PROB": 0.05
+            }
+        },
+        { "name": "per_genome_mutations_2",
+            "description": "",
+            "config": {
+                "DIVIDE_INS_PROB": 0.07,
+                "DIVIDE_DEL_PROB": 0.07,
+                "DIVIDE_MUT_PROB": 0.07
+            }
+        },
+        { "name": "per_genome_mutations_3",
+            "description": "",
+            "config": {
+                "DIVIDE_INS_PROB": 0.09,
+                "DIVIDE_DEL_PROB": 0.09,
+                "DIVIDE_MUT_PROB": 0.09
+            }
+        }
+    ]
+}
+
+        
+            
+
+
+
+
+

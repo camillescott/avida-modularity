@@ -31,13 +31,6 @@ def cfg_series_to_avida_fmt(cfg_series, fp):
     '''
     cfg_series.to_csv(fp, sep=' ')
 
-
-# events: use json list of event lines, OR jinja template
-# avida.cfg: use json k:v pairs, join on default config
-# environemtn: use json list of resource lines, OR jinja template
-# analyze: should be static between experiments? (or jinja)
-# inst-set: static between experiments
-
 def update_avida_cfg_series(cfg_series, new_config_values):
     assert type(cfg_series) is pd.Series
     for key, value in new_config_values.iteritems():
