@@ -6,6 +6,7 @@ import os
 import shutil
 import sys
 import json
+import pprint
 
 from doit.tools import run_once, create_folder, title_with_actions
 from doit.task import clean_targets, dict_to_task
@@ -175,7 +176,8 @@ def setup_experiments(exp_metadata, metadata_fn, run_id, runs, bindir=BINDIR, wd
 
             actions.append((create_folder, [rep_folder]))
             targets.append(rep_config_fn)
-            runs.append((os.path.abspath(rep_folder), os.path.abspath(rep_config_fn)))
+            runs.append((os.path.abspath(rep_folder), os.path.abspath(rep_config_fn),
+                         experiment['name'], i))
 
 
         actions.append((write_exp_config, [experiment, rep_targets]))
@@ -187,10 +189,31 @@ def setup_experiments(exp_metadata, metadata_fn, run_id, runs, bindir=BINDIR, wd
                'targets': targets,
                'clean': [clean_targets, (clean_folder, [exp_folder])]}
 
+
+@task_funcs.create_task_object
+def run_experiment(config_fn, name, rep, bindir=BINDIR, label=''):
+
+    config_dir = os.path.dirname(config_fn)
+    cmd = '{ex} -c {cfg}'.format(ex=os.path.join(bindir, 'avida'), cfg=config_fn)
+    done_fn = os.path.join(config_dir, 'done')
+
+    if not label:
+        label = 'avida_run_' + name + ':' + str(rep)
+
+    return {'title': title_with_actions,
+            'name': label,
+            'actions': [cmd, 'touch ' + done_fn],
+            'file_dep': [config_fn],
+            'targets': [done_fn],
+            'uptodate': [run_once],
+            'clean': [clean_targets, (clean_folder, [os.path.join(config_dir, 'data')])]}
+            
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--experiment-metadata')
     parser.add_argument('--run-id', default='')
+    parser.add_argument('--run-experiment', action='store_true', default=False)
     args, doit_args = parser.parse_known_args()
 
     if not args.run_id:
@@ -210,7 +233,10 @@ def main():
     tasks.extend([dict_to_task(tsk) for tsk in setup_experiments(metadata, args.experiment_metadata,
                                                                  args.run_id, runs)])
 
-    print runs
+    pprint.pprint(runs)
+
+    if args.run_experiment:
+        tasks.extend([run_experiment(cfg_fn, name, rep) for _, cfg_fn, name, rep in runs])
 
     task_funcs.run_tasks(tasks, doit_args)
 
