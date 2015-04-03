@@ -38,3 +38,11 @@ def update_avida_cfg_series(cfg_series, new_config_values):
             cfg_series[key] = value
         except IndexError as e:
             print >>sys.stderr, 'Unable to update config key {} to value {}'.format(key, value)
+
+def update_avida_cfg_with_instset(cfg_series, inst_list, inst_set):
+    keys = ['INSTSET']
+    keys.extend(['INST'] * len(inst_list))
+    values = [inst_set]
+    values.extend(inst_list)
+    inst_series = pd.Series(values, index=keys)
+    return pd.concat([cfg_series, inst_series])

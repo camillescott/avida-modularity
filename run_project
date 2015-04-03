@@ -3,14 +3,26 @@
 from peasoup import task_funcs
 import argparse
 import os
+import shutil
 import sys
+import json
 
 from doit.tools import run_once, create_folder, title_with_actions
-from doit.task import clean_targets
+from doit.task import clean_targets, dict_to_task
+
+import datetime
+
+import utils
 
 WDIR = '_work'
 BINDIR = '_bin'
 AVIDA_URL = 'git@github.com:devosoft/avida.git'
+
+def clean_folder(folder):
+    try:
+        shutil.rmtree(folder)
+    except OSError:
+        pass
 
 @task_funcs.create_task_object
 def curl_task(url, target_fn, wdir=WDIR, label=''):
@@ -32,12 +44,6 @@ def git_clone_task(url, target_folder, wdir=WDIR, label=''):
 
     if not label:
         label = 'git_clone_{url}'.format(**locals())
-    
-    def clean_folder(folder):
-        try:
-            os.removedirs(folder)
-        except OSError:
-            pass
 
     return {'title': title_with_actions,
             'name': label,
@@ -84,15 +90,128 @@ def link_avida_task(folder, bindir=BINDIR, label=''):
             'clean': [clean_targets]}
 
 
+def setup_experiments(exp_metadata, metadata_fn, run_id, runs, bindir=BINDIR, wdir=WDIR):
+
+    root_dir = os.path.join(WDIR, exp_metadata['experiment-name'] + '-' + run_id)
+    yield {'title': title_with_actions,
+           'name': 'create_root_dir',
+           'actions': [(create_folder, [root_dir])],
+           'file_dep': [os.path.join(bindir, 'avida')],
+           'targets': [root_dir],
+           'uptodate': [run_once],
+       'clean': [(clean_folder, [root_dir])]}
+
+    def write_file(fn, s):
+        with open(fn, 'wb') as fp:
+            fp.write(s)
+
+    ancestor_fn = os.path.join(root_dir, exp_metadata['shared-config']['ancestor']['file'])
+    ancestor_str = '\n'.join(exp_metadata['shared-config']['ancestor']['config'] * \
+                             int(exp_metadata['shared-config']['ancestor']['length']))
+
+    events_fn = os.path.join(root_dir, exp_metadata['shared-config']['events']['file'])
+    events = exp_metadata['shared-config']['events']['config']
+    events[0] += os.path.abspath(ancestor_fn)
+    events_str = '\n'.join(exp_metadata['shared-config']['events']['config'])
+
+    analyze_fn = os.path.join(root_dir, exp_metadata['shared-config']['analyze']['file'])
+    analyze_str = '\n'.join(exp_metadata['shared-config']['analyze']['config'])
+
+    environment_fn = os.path.join(root_dir, exp_metadata['shared-config']['environment']['file'])
+    environment_str = '\n'.join(exp_metadata['shared-config']['environment']['config'])
+
+    #readme_fn = os.path.join(root_dir, 'ABOUT.json')
+    
+    shared_files = [(events_fn, events_str), (analyze_fn, analyze_str),
+                    (environment_fn, environment_str), (ancestor_fn, ancestor_str)]
+
+    yield {'title': title_with_actions,
+           'name': 'write_shared_files',
+           'actions': [(write_file, [fn, s]) for fn, s in shared_files],
+           'file_dep': [metadata_fn, os.path.join(bindir, 'avida.cfg')],
+           'task_dep': ['create_root_dir'],
+           'targets': [fn for fn, _ in shared_files],
+           'clean': [clean_targets]}
+
+
+
+    def write_cfg(fn, cfg):
+        with open(fn, 'wb') as fp:
+            utils.cfg_series_to_avida_fmt(cfg, fp)
+
+    def write_exp_config(experiment, rep_targets):
+
+        base_config = utils.parse_avida_cfg(os.path.join(bindir, 'avida.cfg'))
+        shared_config = exp_metadata['shared-config']['avida']['config']
+        shared_config['EVENT_FILE'] = os.path.abspath(events_fn)
+        shared_config['ANALYZE_FILE'] = os.path.abspath(analyze_fn)
+        shared_config['ENVIRONMENT_FILE'] = os.path.abspath(environment_fn)
+        utils.update_avida_cfg_series(base_config, shared_config)
+        base_config = utils.update_avida_cfg_with_instset(base_config,
+                                    exp_metadata['shared-config']['instructions']['INST'],
+                                    exp_metadata['shared-config']['instructions']['INSTSET'])
+
+        exp_config = base_config.copy()
+        utils.update_avida_cfg_series(exp_config, experiment['config'])
+
+        for rep_folder, rep_config_fn in rep_targets:
+            rep_config = exp_config.copy()
+            rep_config['DATA_DIR'] = os.path.abspath(os.path.join(rep_folder, 'data'))
+            write_cfg(rep_config_fn, rep_config)
+
+
+    num_replicates = exp_metadata['shared-config']['experiments']['replicates']
+    for experiment in exp_metadata['experiments']:
+
+        exp_folder = os.path.join(root_dir, experiment['name'])
+        actions = [(create_folder, [exp_folder])]
+        targets = []
+        rep_targets = []
+
+        for i in xrange(num_replicates):
+            rep_folder = os.path.join(exp_folder, 'rep_' + str(i))
+            rep_config_fn = os.path.join(rep_folder, experiment['name']+'.cfg')
+            rep_targets.append((rep_folder, rep_config_fn))
+
+            actions.append((create_folder, [rep_folder]))
+            targets.append(rep_config_fn)
+            runs.append((os.path.abspath(rep_folder), os.path.abspath(rep_config_fn)))
+
+
+        actions.append((write_exp_config, [experiment, rep_targets]))
+
+        yield {'title': title_with_actions,
+               'name': 'setup_{name}'.format(name=experiment['name']),
+               'actions': actions,
+               'file_dep': [fn for fn, _ in shared_files] + [metadata_fn],
+               'targets': targets,
+               'clean': [clean_targets, (clean_folder, [exp_folder])]}
 
 def main():
     parser = argparse.ArgumentParser()
+    parser.add_argument('--experiment-metadata')
+    parser.add_argument('--run-id', default='')
     args, doit_args = parser.parse_known_args()
 
-    bin_tasks = [git_clone_task(AVIDA_URL, os.path.join(WDIR, 'avida')),
+    if not args.run_id:
+        args.run_id = datetime.datetime.now().strftime('%Y-%m-%d-%H:%M')
+
+    with open(args.experiment_metadata, 'r') as fp:
+        try:
+            metadata = json.load(fp)
+        except Exception as e:
+            print >>sys.stderr, 'ERROR parsing experiment metadata\n', e
+            sys.exit(1)
+    
+    tasks = [git_clone_task(AVIDA_URL, os.path.join(WDIR, 'avida')),
                 build_avida_task(os.path.join(WDIR, 'avida')),
                 link_avida_task(os.path.join(WDIR, 'avida'))]
+    runs = []
+    tasks.extend([dict_to_task(tsk) for tsk in setup_experiments(metadata, args.experiment_metadata,
+                                                                 args.run_id, runs)])
 
-    task_funcs.run_tasks(bin_tasks, doit_args)
+    print runs
+
+    task_funcs.run_tasks(tasks, doit_args)
 
 main()
