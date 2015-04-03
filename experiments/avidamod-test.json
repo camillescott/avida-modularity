@@ -1,11 +1,11 @@
-{ "experiment-name": "avida-genetic-architecture",
+{ "experiment-name": "avida-genetic-architecture-test",
     "authors": ["Camille Scott", "Alita Burmeister"],
     "description": " ",
 
     "shared-config": {
 
         "experiments": {
-            "replicates": 10
+            "replicates": 2
         },
 
         "events": {
@@ -22,9 +22,9 @@
                 "u 0:250:end PrintResourceData",
                 "u 250:250:end PrintErrorData",
                 "u 250:250:end PrintVarianceData",
-                "u 500000 SavePopulation",
+                "u 5000 SavePopulation",
                 "g 0:250:end SavePopulation",
-                "u 500000 Exit"
+                "u 5000 Exit"
             ]
         },
 
