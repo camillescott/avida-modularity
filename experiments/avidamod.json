@@ -134,6 +134,38 @@
                 "DIVIDE_DEL_PROB": 0.09
             }
         },
+        { "name": "per_base_mutations_0",
+            "description": "",
+            "config": {
+                "DIV_MUT_PROB": 0.0015,
+                "DIV_INS_PROB": 0.0015,
+                "DIV_DEL_PROB": 0.0015
+            }
+        },
+        { "name": "per_base_mutations_1",
+            "description": "",
+            "config": {
+                "DIV_MUT_PROB": 0.0025,
+                "DIV_INS_PROB": 0.0025,
+                "DIV_DEL_PROB": 0.0025
+            }
+        },
+        { "name": "per_base_mutations_2",
+            "description": "",
+            "config": {
+                "DIV_MUT_PROB": 0.0035,
+                "DIV_INS_PROB": 0.0035,
+                "DIV_DEL_PROB": 0.0035
+            }
+        },
+        { "name": "per_base_mutations_3",
+            "description": "",
+            "config": {
+                "DIV_MUT_PROB": 0.0045,
+                "DIV_INS_PROB": 0.0045,
+                "DIV_DEL_PROB": 0.0045
+            }
+        },
         { "name": "per_genome_mutations_0",
             "description": "",
             "config": {
