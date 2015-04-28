@@ -31,11 +31,12 @@
         "analyze": {
             "file": "avidamod-analyze.cfg",
             "config": [
-                "LOAD run-data/detail-500000.spop",
-                "LOAD_RESOURCES run-data/resource.dat",
+                "LOAD data/detail-500000.spop",
+                "LOAD_RESOURCES data/resource.dat",
                 "FIND_LINEAGE num_cpus",
                 "RECALC use_resources",
-                "MAP_TASKS dom_lineage/ update_born task.0",
+                "MAP_TASKS dom_lineage_map/ update_born task.0",
+		"TRACE dom_lineage_trace/",
                 "DETAIL dom_lineage_orgs.dat update_born id merit efficiency fitness gest_time"
             ]
         },
