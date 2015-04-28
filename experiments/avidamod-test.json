@@ -31,11 +31,12 @@
         "analyze": {
             "file": "avidamod-analyze.cfg",
             "config": [
-                "LOAD run-data/detail-500000.spop",
-                "LOAD_RESOURCES run-data/resource.dat",
+                "LOAD data/detail-3000.spop",
+                "LOAD_RESOURCES data/resource.dat",
                 "FIND_LINEAGE num_cpus",
                 "RECALC use_resources",
-                "MAP_TASKS dom_lineage/ update_born task.0",
+                "MAP_TASKS dom_lineage_map/ update_born task.0",
+		"TRACE dom_lineage_trace/",
                 "DETAIL dom_lineage_orgs.dat update_born id merit efficiency fitness gest_time"
             ]
         },
@@ -114,26 +115,6 @@
                 "DIVIDE_DEL_PROB": 0.05
             }
         },
-        { "name": "all_mutations_2",
-            "description": "",
-            "config": {
-                "DIV_MUT_PROB": 0.0035,
-                "DIV_INS_PROB": 0.0035,
-                "DIV_DEL_PROB": 0.0035,
-                "DIVIDE_INS_PROB": 0.07,
-                "DIVIDE_DEL_PROB": 0.07
-            }
-        },
-        { "name": "all_mutations_3",
-            "description": "",
-            "config": {
-                "DIV_MUT_PROB": 0.0045,
-                "DIV_INS_PROB": 0.0045,
-                "DIV_DEL_PROB": 0.0045,
-                "DIVIDE_INS_PROB": 0.09,
-                "DIVIDE_DEL_PROB": 0.09
-            }
-        },
         { "name": "per_genome_mutations_0",
             "description": "",
             "config": {
@@ -148,22 +129,6 @@
                 "DIVIDE_INS_PROB": 0.05,
                 "DIVIDE_DEL_PROB": 0.05,
                 "DIVIDE_MUT_PROB": 0.05
-            }
-        },
-        { "name": "per_genome_mutations_2",
-            "description": "",
-            "config": {
-                "DIVIDE_INS_PROB": 0.07,
-                "DIVIDE_DEL_PROB": 0.07,
-                "DIVIDE_MUT_PROB": 0.07
-            }
-        },
-        { "name": "per_genome_mutations_3",
-            "description": "",
-            "config": {
-                "DIVIDE_INS_PROB": 0.09,
-                "DIVIDE_DEL_PROB": 0.09,
-                "DIVIDE_MUT_PROB": 0.09
             }
         }
     ]

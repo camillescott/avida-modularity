@@ -195,7 +195,7 @@ def run_experiment(config_fn, name, rep, bindir=BINDIR, label=''):
 
     config_dir = os.path.dirname(config_fn)
     cmd = '{ex} -c {cfg}'.format(ex=os.path.join(bindir, 'avida'), cfg=config_fn)
-    done_fn = os.path.join(config_dir, 'done')
+    done_fn = os.path.join(config_dir, 'run_done')
 
     if not label:
         label = 'avida_run_' + name + ':' + str(rep)
@@ -207,7 +207,28 @@ def run_experiment(config_fn, name, rep, bindir=BINDIR, label=''):
             'targets': [done_fn],
             'uptodate': [run_once],
             'clean': [clean_targets, (clean_folder, [os.path.join(config_dir, 'data')])]}
-            
+
+
+@task_funcs.create_task_object
+def run_analyze(config_fn, name, rep, bindir=BINDIR, label=''):
+
+    config_dir = os.path.dirname(config_fn)
+    cmd = 'cd {d} && {ex} -c {cfg} -a'.format(d=config_dir, ex=os.path.abspath(os.path.join(bindir, 'avida')), 
+                                              cfg=config_fn)
+    run_done_fn = os.path.join(config_dir, 'run_done')
+    analyze_done_fn = os.path.join(config_dir, 'analyze_done')
+
+    if not label:
+        label = 'avida_analyze_' + name + ':' + str(rep)
+
+    return {'title': title_with_actions,
+            'name': label,
+            'actions': [cmd, 'touch ' + analyze_done_fn],
+            'file_dep': [config_fn, run_done_fn],
+            'targets': [analyze_done_fn],
+            'uptodate': [run_once],
+            'clean': [clean_targets]}
+             
 
 def main():
     parser = argparse.ArgumentParser()
@@ -237,6 +258,7 @@ def main():
 
     if args.run_experiment:
         tasks.extend([run_experiment(cfg_fn, name, rep) for _, cfg_fn, name, rep in runs])
+        tasks.extend([run_analyze(cfg_fn, name, rep) for _, cfg_fn, name, rep in runs])
 
     task_funcs.run_tasks(tasks, doit_args)
 
