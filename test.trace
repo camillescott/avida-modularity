@@ -1,0 +1,931 @@
+---------------------------
+U:-1
+1 IP:0 (swap)
+AX:0 [0x0]  BX:0 [0x0]  CX:0 [0x0]  
+  R-Head:0 W-Head:0 F-Head:0  RL:   
+* Stack 0: Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Stack 1: Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Mem (80):  rbdqoxxfdvxcubsmxbmwlpfqekomispjcqfhcmptakampjlfmvjirdcffpkxxcuqmsoqeaxqpovevmba
+  MeritBase:80 Bonus:1 Errors:0 Donates:0
+  Task Count (Quality): 0 (0)
+
+Input (env): 0x0f13149f 0x3308e53e 0x556241eb
+Input (buf):
+Output:     
+---------------------------
+U:-1
+2 IP:2 (if-n-equ)
+AX:0 [0x0]  BX:0 [0x0]  CX:0 [0x0]  
+  R-Head:0 W-Head:0 F-Head:0  RL:   
+* Stack 0: Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Stack 1: Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Mem (80):  rbdqoxxfdvxcubsmxbmwlpfqekomispjcqfhcmptakampjlfmvjirdcffpkxxcuqmsoqeaxqpovevmba
+  MeritBase:80 Bonus:1 Errors:0 Donates:0
+  Task Count (Quality): 0 (0)
+
+Input (env): 0x0f13149f 0x3308e53e 0x556241eb
+Input (buf):
+Output:     
+---------------------------
+U:-1
+3 IP:4 (push)
+AX:0 [0x0]  BX:0 [0x0]  CX:0 [0x0]  
+  R-Head:0 W-Head:0 F-Head:0  RL:   
+* Stack 0: Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Stack 1: Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Mem (80):  rbdqoxxfdvxcubsmxbmwlpfqekomispjcqfhcmptakampjlfmvjirdcffpkxxcuqmsoqeaxqpovevmba
+  MeritBase:80 Bonus:1 Errors:0 Donates:0
+  Task Count (Quality): 0 (0)
+
+Input (env): 0x0f13149f 0x3308e53e 0x556241eb
+Input (buf):
+Output:     
+---------------------------
+U:-1
+4 IP:5 (IO-Feedback)
+AX:0 [0x0]  BX:0 [0x0]  CX:0 [0x0]  
+  R-Head:0 W-Head:0 F-Head:0  RL:   
+* Stack 0: Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Stack 1: Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Mem (80):  rbdqoxxfdvxcubsmxbmwlpfqekomispjcqfhcmptakampjlfmvjirdcffpkxxcuqmsoqeaxqpovevmba
+  MeritBase:80 Bonus:1 Errors:0 Donates:0
+  Task Count (Quality): 0 (0)
+
+Input (env): 0x0f13149f 0x3308e53e 0x556241eb
+Input (buf):
+Output:     
+---------------------------
+U:-1
+5 IP:6 (IO-Feedback)
+AX:0 [0x0]  BX:252908703 [0xf13149f]  CX:0 [0x0]  
+  R-Head:0 W-Head:0 F-Head:0  RL:   
+* Stack 0: Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Stack 1: Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Mem (80):  rbdqoxxfdvxcubsmxbmwlpfqekomispjcqfhcmptakampjlfmvjirdcffpkxxcuqmsoqeaxqpovevmba
+  MeritBase:80 Bonus:1 Errors:0 Donates:0
+  Task Count (Quality): 0 (0)
+
+Input (env): 0x0f13149f 0x3308e53e 0x556241eb
+Input (buf): 0x0f13149f
+Output:      0x00000000
+---------------------------
+U:-1
+6 IP:7 (if-label)
+AX:0 [0x0]  BX:856220990 [0x3308e53e]  CX:0 [0x0]  
+  R-Head:0 W-Head:0 F-Head:0  RL:   
+* Stack 0: Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Stack 1: Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Mem (80):  rbdqoxxfdvxcubsmxbmwlpfqekomispjcqfhcmptakampjlfmvjirdcffpkxxcuqmsoqeaxqpovevmba
+  MeritBase:80 Bonus:1 Errors:0 Donates:0
+  Task Count (Quality): 0 (0)
+
+Input (env): 0x0f13149f 0x3308e53e 0x556241eb
+Input (buf): 0x3308e53e 0x0f13149f
+Output:      0x0f13149f
+---------------------------
+U:-1
+7 IP:8 (if-n-equ)
+AX:0 [0x0]  BX:856220990 [0x3308e53e]  CX:0 [0x0]  
+  R-Head:0 W-Head:0 F-Head:0  RL:   
+* Stack 0: Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Stack 1: Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Mem (80):  rbdqoxxfdvxcubsmxbmwlpfqekomispjcqfhcmptakampjlfmvjirdcffpkxxcuqmsoqeaxqpovevmba
+  MeritBase:80 Bonus:1 Errors:0 Donates:0
+  Task Count (Quality): 0 (0)
+
+Input (env): 0x0f13149f 0x3308e53e 0x556241eb
+Input (buf): 0x3308e53e 0x0f13149f
+Output:      0x0f13149f
+---------------------------
+U:-1
+8 IP:9 (IO)
+AX:0 [0x0]  BX:856220990 [0x3308e53e]  CX:0 [0x0]  
+  R-Head:0 W-Head:0 F-Head:0  RL:   
+* Stack 0: Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Stack 1: Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Mem (80):  rbdqoxxfdvxcubsmxbmwlpfqekomispjcqfhcmptakampjlfmvjirdcffpkxxcuqmsoqeaxqpovevmba
+  MeritBase:80 Bonus:1 Errors:0 Donates:0
+  Task Count (Quality): 0 (0)
+
+Input (env): 0x0f13149f 0x3308e53e 0x556241eb
+Input (buf): 0x3308e53e 0x0f13149f
+Output:      0x0f13149f
+---------------------------
+U:-1
+9 IP:10 (IO-Feedback)
+AX:0 [0x0]  BX:1432502763 [0x556241eb]  CX:0 [0x0]  
+  R-Head:0 W-Head:0 F-Head:0  RL:   
+* Stack 0: Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Stack 1: Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Mem (80):  rbdqoxxfdvxcubsmxbmwlpfqekomispjcqfhcmptakampjlfmvjirdcffpkxxcuqmsoqeaxqpovevmba
+  MeritBase:80 Bonus:1 Errors:0 Donates:0
+  Task Count (Quality): 0 (0)
+
+Input (env): 0x0f13149f 0x3308e53e 0x556241eb
+Input (buf): 0x556241eb 0x3308e53e 0x0f13149f
+Output:      0x3308e53e
+---------------------------
+U:-1
+10 IP:12 (nand)
+AX:0 [0x0]  BX:1432502763 [0x556241eb]  CX:252908703 [0xf13149f]  
+  R-Head:0 W-Head:0 F-Head:0  RL:   
+* Stack 0: Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Stack 1: Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Mem (80):  rbdqoxxfdvxcubsmxbmwlpfqekomispjcqfhcmptakampjlfmvjirdcffpkxxcuqmsoqeaxqpovevmba
+  MeritBase:80 Bonus:1 Errors:0 Donates:0
+  Task Count (Quality): 0 (0)
+
+Input (env): 0x0f13149f 0x3308e53e 0x556241eb
+Input (buf): 0x0f13149f 0x556241eb 0x3308e53e
+Output:      0x00000000
+---------------------------
+U:-1
+11 IP:14 (add)
+AX:0 [0x0]  BX:-84017292 [0xfafdff74]  CX:252908703 [0xf13149f]  
+  R-Head:0 W-Head:0 F-Head:0  RL:   
+* Stack 0: Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Stack 1: Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Mem (80):  rbdqoxxfdvxcubsmxbmwlpfqekomispjcqfhcmptakampjlfmvjirdcffpkxxcuqmsoqeaxqpovevmba
+  MeritBase:80 Bonus:1 Errors:0 Donates:0
+  Task Count (Quality): 0 (0)
+
+Input (env): 0x0f13149f 0x3308e53e 0x556241eb
+Input (buf): 0x0f13149f 0x556241eb 0x3308e53e
+Output:      0x00000000
+---------------------------
+U:-1
+12 IP:15 (inc)
+AX:0 [0x0]  BX:168891411 [0xa111413]  CX:252908703 [0xf13149f]  
+  R-Head:0 W-Head:0 F-Head:0  RL:   
+* Stack 0: Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Stack 1: Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Mem (80):  rbdqoxxfdvxcubsmxbmwlpfqekomispjcqfhcmptakampjlfmvjirdcffpkxxcuqmsoqeaxqpovevmba
+  MeritBase:80 Bonus:1 Errors:0 Donates:0
+  Task Count (Quality): 0 (0)
+
+Input (env): 0x0f13149f 0x3308e53e 0x556241eb
+Input (buf): 0x0f13149f 0x556241eb 0x3308e53e
+Output:      0x00000000
+---------------------------
+U:-1
+13 IP:16 (IO-Feedback)
+AX:0 [0x0]  BX:168891412 [0xa111414]  CX:252908703 [0xf13149f]  
+  R-Head:0 W-Head:0 F-Head:0  RL:   
+* Stack 0: Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Stack 1: Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Mem (80):  rbdqoxxfdvxcubsmxbmwlpfqekomispjcqfhcmptakampjlfmvjirdcffpkxxcuqmsoqeaxqpovevmba
+  MeritBase:80 Bonus:1 Errors:0 Donates:0
+  Task Count (Quality): 0 (0)
+
+Input (env): 0x0f13149f 0x3308e53e 0x556241eb
+Input (buf): 0x0f13149f 0x556241eb 0x3308e53e
+Output:      0x00000000
+---------------------------
+U:-1
+14 IP:18 (inc)
+AX:0 [0x0]  BX:856220990 [0x3308e53e]  CX:252908703 [0xf13149f]  
+  R-Head:0 W-Head:0 F-Head:0  RL:   
+* Stack 0: Ox00000001 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Stack 1: Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Mem (80):  rbdqoxxfdvxcubsmxbmwlpfqekomispjcqfhcmptakampjlfmvjirdcffpkxxcuqmsoqeaxqpovevmba
+  MeritBase:80 Bonus:8 Errors:0 Donates:0
+  Task Count (Quality): 1 (1)
+
+Input (env): 0x0f13149f 0x3308e53e 0x556241eb
+Input (buf): 0x3308e53e 0x0f13149f 0x556241eb
+Output:      0x0a111414
+---------------------------
+U:-1
+15 IP:19 (h-search)
+AX:0 [0x0]  BX:856220991 [0x3308e53f]  CX:252908703 [0xf13149f]  
+  R-Head:0 W-Head:0 F-Head:0  RL:   
+* Stack 0: Ox00000001 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Stack 1: Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Mem (80):  rbdqoxxfdvxcubsmxbmwlpfqekomispjcqfhcmptakampjlfmvjirdcffpkxxcuqmsoqeaxqpovevmba
+  MeritBase:80 Bonus:8 Errors:0 Donates:0
+  Task Count (Quality): 1 (1)
+
+Input (env): 0x0f13149f 0x3308e53e 0x556241eb
+Input (buf): 0x3308e53e 0x0f13149f 0x556241eb
+Output:      0x0a111414
+---------------------------
+U:-1
+16 IP:20 (shift-l)
+AX:0 [0x0]  BX:0 [0x0]  CX:0 [0x0]  
+  R-Head:0 W-Head:0 F-Head:20  RL:   
+* Stack 0: Ox00000001 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Stack 1: Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Mem (80):  rbdqoxxfdvxcubsmxbmwlpfqekomispjcqfhcmptakampjlfmvjirdcffpkxxcuqmsoqeaxqpovevmba
+  MeritBase:80 Bonus:8 Errors:0 Donates:0
+  Task Count (Quality): 1 (1)
+
+Input (env): 0x0f13149f 0x3308e53e 0x556241eb
+Input (buf): 0x3308e53e 0x0f13149f 0x556241eb
+Output:      0x0a111414
+---------------------------
+U:-1
+17 IP:21 (pop)
+AX:0 [0x0]  BX:0 [0x0]  CX:0 [0x0]  
+  R-Head:0 W-Head:0 F-Head:20  RL:   
+* Stack 0: Ox00000001 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Stack 1: Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Mem (80):  rbdqoxxfdvxcubsmxbmwlpfqekomispjcqfhcmptakampjlfmvjirdcffpkxxcuqmsoqeaxqpovevmba
+  MeritBase:80 Bonus:8 Errors:0 Donates:0
+  Task Count (Quality): 1 (1)
+
+Input (env): 0x0f13149f 0x3308e53e 0x556241eb
+Input (buf): 0x3308e53e 0x0f13149f 0x556241eb
+Output:      0x0a111414
+---------------------------
+U:-1
+18 IP:22 (if-label)
+AX:0 [0x0]  BX:1 [0x1]  CX:0 [0x0]  
+  R-Head:0 W-Head:0 F-Head:20  RL:   
+* Stack 0: Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Stack 1: Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Mem (80):  rbdqoxxfdvxcubsmxbmwlpfqekomispjcqfhcmptakampjlfmvjirdcffpkxxcuqmsoqeaxqpovevmba
+  MeritBase:80 Bonus:8 Errors:0 Donates:0
+  Task Count (Quality): 1 (1)
+
+Input (env): 0x0f13149f 0x3308e53e 0x556241eb
+Input (buf): 0x3308e53e 0x0f13149f 0x556241eb
+Output:      0x0a111414
+---------------------------
+U:-1
+19 IP:23 (swap-stk)
+AX:0 [0x0]  BX:1 [0x1]  CX:0 [0x0]  
+  R-Head:0 W-Head:0 F-Head:20  RL:   
+* Stack 0: Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Stack 1: Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Mem (80):  rbdqoxxfdvxcubsmxbmwlpfqekomispjcqfhcmptakampjlfmvjirdcffpkxxcuqmsoqeaxqpovevmba
+  MeritBase:80 Bonus:8 Errors:0 Donates:0
+  Task Count (Quality): 1 (1)
+
+Input (env): 0x0f13149f 0x3308e53e 0x556241eb
+Input (buf): 0x3308e53e 0x0f13149f 0x556241eb
+Output:      0x0a111414
+---------------------------
+U:-1
+20 IP:24 (if-less)
+AX:0 [0x0]  BX:1 [0x1]  CX:0 [0x0]  
+  R-Head:0 W-Head:0 F-Head:20  RL:   
+  Stack 0: Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+* Stack 1: Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Mem (80):  rbdqoxxfdvxcubsmxbmwlpfqekomispjcqfhcmptakampjlfmvjirdcffpkxxcuqmsoqeaxqpovevmba
+  MeritBase:80 Bonus:8 Errors:0 Donates:0
+  Task Count (Quality): 1 (1)
+
+Input (env): 0x0f13149f 0x3308e53e 0x556241eb
+Input (buf): 0x3308e53e 0x0f13149f 0x556241eb
+Output:      0x0a111414
+---------------------------
+U:-1
+21 IP:26 (push)
+AX:0 [0x0]  BX:1 [0x1]  CX:0 [0x0]  
+  R-Head:0 W-Head:0 F-Head:20  RL:   
+  Stack 0: Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+* Stack 1: Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Mem (80):  rbdqoxxfdvxcubsmxbmwlpfqekomispjcqfhcmptakampjlfmvjirdcffpkxxcuqmsoqeaxqpovevmba
+  MeritBase:80 Bonus:8 Errors:0 Donates:0
+  Task Count (Quality): 1 (1)
+
+Input (env): 0x0f13149f 0x3308e53e 0x556241eb
+Input (buf): 0x3308e53e 0x0f13149f 0x556241eb
+Output:      0x0a111414
+---------------------------
+U:-1
+22 IP:27 (inc)
+AX:0 [0x0]  BX:1 [0x1]  CX:0 [0x0]  
+  R-Head:0 W-Head:0 F-Head:20  RL:   
+  Stack 0: Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+* Stack 1: Ox00000001 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Mem (80):  rbdqoxxfdvxcubsmxbmwlpfqekomispjcqfhcmptakampjlfmvjirdcffpkxxcuqmsoqeaxqpovevmba
+  MeritBase:80 Bonus:8 Errors:0 Donates:0
+  Task Count (Quality): 1 (1)
+
+Input (env): 0x0f13149f 0x3308e53e 0x556241eb
+Input (buf): 0x3308e53e 0x0f13149f 0x556241eb
+Output:      0x0a111414
+---------------------------
+U:-1
+23 IP:28 (get-head)
+AX:0 [0x0]  BX:2 [0x2]  CX:0 [0x0]  
+  R-Head:0 W-Head:0 F-Head:20  RL:   
+  Stack 0: Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+* Stack 1: Ox00000001 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Mem (80):  rbdqoxxfdvxcubsmxbmwlpfqekomispjcqfhcmptakampjlfmvjirdcffpkxxcuqmsoqeaxqpovevmba
+  MeritBase:80 Bonus:8 Errors:0 Donates:0
+  Task Count (Quality): 1 (1)
+
+Input (env): 0x0f13149f 0x3308e53e 0x556241eb
+Input (buf): 0x3308e53e 0x0f13149f 0x556241eb
+Output:      0x0a111414
+---------------------------
+U:-1
+24 IP:29 (add)
+AX:0 [0x0]  BX:2 [0x2]  CX:28 [0x1c]  
+  R-Head:0 W-Head:0 F-Head:20  RL:   
+  Stack 0: Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+* Stack 1: Ox00000001 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Mem (80):  rbdqoxxfdvxcubsmxbmwlpfqekomispjcqfhcmptakampjlfmvjirdcffpkxxcuqmsoqeaxqpovevmba
+  MeritBase:80 Bonus:8 Errors:0 Donates:0
+  Task Count (Quality): 1 (1)
+
+Input (env): 0x0f13149f 0x3308e53e 0x556241eb
+Input (buf): 0x3308e53e 0x0f13149f 0x556241eb
+Output:      0x0a111414
+---------------------------
+U:-1
+25 IP:30 (pop)
+AX:0 [0x0]  BX:30 [0x1e]  CX:28 [0x1c]  
+  R-Head:0 W-Head:0 F-Head:20  RL:   
+  Stack 0: Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+* Stack 1: Ox00000001 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Mem (80):  rbdqoxxfdvxcubsmxbmwlpfqekomispjcqfhcmptakampjlfmvjirdcffpkxxcuqmsoqeaxqpovevmba
+  MeritBase:80 Bonus:8 Errors:0 Donates:0
+  Task Count (Quality): 1 (1)
+
+Input (env): 0x0f13149f 0x3308e53e 0x556241eb
+Input (buf): 0x3308e53e 0x0f13149f 0x556241eb
+Output:      0x0a111414
+---------------------------
+U:-1
+26 IP:31 (set-flow)
+AX:0 [0x0]  BX:1 [0x1]  CX:28 [0x1c]  
+  R-Head:0 W-Head:0 F-Head:20  RL:   
+  Stack 0: Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+* Stack 1: Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Mem (80):  rbdqoxxfdvxcubsmxbmwlpfqekomispjcqfhcmptakampjlfmvjirdcffpkxxcuqmsoqeaxqpovevmba
+  MeritBase:80 Bonus:8 Errors:0 Donates:0
+  Task Count (Quality): 1 (1)
+
+Input (env): 0x0f13149f 0x3308e53e 0x556241eb
+Input (buf): 0x3308e53e 0x0f13149f 0x556241eb
+Output:      0x0a111414
+---------------------------
+U:-1
+27 IP:33 (swap-stk)
+AX:0 [0x0]  BX:1 [0x1]  CX:28 [0x1c]  
+  R-Head:0 W-Head:0 F-Head:28  RL:   
+  Stack 0: Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+* Stack 1: Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Mem (80):  rbdqoxxfdvxcubsmxbmwlpfqekomispjcqfhcmptakampjlfmvjirdcffpkxxcuqmsoqeaxqpovevmba
+  MeritBase:80 Bonus:8 Errors:0 Donates:0
+  Task Count (Quality): 1 (1)
+
+Input (env): 0x0f13149f 0x3308e53e 0x556241eb
+Input (buf): 0x3308e53e 0x0f13149f 0x556241eb
+Output:      0x0a111414
+---------------------------
+U:-1
+28 IP:34 (if-label)
+AX:0 [0x0]  BX:1 [0x1]  CX:28 [0x1c]  
+  R-Head:0 W-Head:0 F-Head:28  RL:   
+* Stack 0: Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Stack 1: Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Mem (80):  rbdqoxxfdvxcubsmxbmwlpfqekomispjcqfhcmptakampjlfmvjirdcffpkxxcuqmsoqeaxqpovevmba
+  MeritBase:80 Bonus:8 Errors:0 Donates:0
+  Task Count (Quality): 1 (1)
+
+Input (env): 0x0f13149f 0x3308e53e 0x556241eb
+Input (buf): 0x3308e53e 0x0f13149f 0x556241eb
+Output:      0x0a111414
+---------------------------
+U:-1
+29 IP:35 (jmp-head)
+AX:0 [0x0]  BX:1 [0x1]  CX:28 [0x1c]  
+  R-Head:0 W-Head:0 F-Head:28  RL:   
+* Stack 0: Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Stack 1: Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Mem (80):  rbdqoxxfdvxcubsmxbmwlpfqekomispjcqfhcmptakampjlfmvjirdcffpkxxcuqmsoqeaxqpovevmba
+  MeritBase:80 Bonus:8 Errors:0 Donates:0
+  Task Count (Quality): 1 (1)
+
+Input (env): 0x0f13149f 0x3308e53e 0x556241eb
+Input (buf): 0x3308e53e 0x0f13149f 0x556241eb
+Output:      0x0a111414
+---------------------------
+U:-1
+30 IP:37 (inc)
+AX:0 [0x0]  BX:1 [0x1]  CX:28 [0x1c]  
+  R-Head:0 W-Head:28 F-Head:28  RL:   
+* Stack 0: Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Stack 1: Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Mem (80):  rbdqoxxfdvxcubsmxbmwlpfqekomispjcqfhcmptakampjlfmvjirdcffpkxxcuqmsoqeaxqpovevmba
+  MeritBase:80 Bonus:8 Errors:0 Donates:0
+  Task Count (Quality): 1 (1)
+
+Input (env): 0x0f13149f 0x3308e53e 0x556241eb
+Input (buf): 0x3308e53e 0x0f13149f 0x556241eb
+Output:      0x0a111414
+---------------------------
+U:-1
+31 IP:38 (pop)
+AX:0 [0x0]  BX:2 [0x2]  CX:28 [0x1c]  
+  R-Head:0 W-Head:28 F-Head:28  RL:   
+* Stack 0: Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Stack 1: Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Mem (80):  rbdqoxxfdvxcubsmxbmwlpfqekomispjcqfhcmptakampjlfmvjirdcffpkxxcuqmsoqeaxqpovevmba
+  MeritBase:80 Bonus:8 Errors:0 Donates:0
+  Task Count (Quality): 1 (1)
+
+Input (env): 0x0f13149f 0x3308e53e 0x556241eb
+Input (buf): 0x3308e53e 0x0f13149f 0x556241eb
+Output:      0x0a111414
+---------------------------
+U:-1
+32 IP:39 (sub)
+AX:0 [0x0]  BX:0 [0x0]  CX:28 [0x1c]  
+  R-Head:0 W-Head:28 F-Head:28  RL:   
+* Stack 0: Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Stack 1: Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Mem (80):  rbdqoxxfdvxcubsmxbmwlpfqekomispjcqfhcmptakampjlfmvjirdcffpkxxcuqmsoqeaxqpovevmba
+  MeritBase:80 Bonus:8 Errors:0 Donates:0
+  Task Count (Quality): 1 (1)
+
+Input (env): 0x0f13149f 0x3308e53e 0x556241eb
+Input (buf): 0x3308e53e 0x0f13149f 0x556241eb
+Output:      0x0a111414
+---------------------------
+U:-1
+33 IP:41 (shift-r)
+AX:-28 [0xffffffe4]  BX:0 [0x0]  CX:28 [0x1c]  
+  R-Head:0 W-Head:28 F-Head:28  RL:   
+* Stack 0: Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Stack 1: Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Mem (80):  rbdqoxxfdvxcubsmxbmwlpfqekomispjcqfhcmptakampjlfmvjirdcffpkxxcuqmsoqeaxqpovevmba
+  MeritBase:80 Bonus:8 Errors:0 Donates:0
+  Task Count (Quality): 1 (1)
+
+Input (env): 0x0f13149f 0x3308e53e 0x556241eb
+Input (buf): 0x3308e53e 0x0f13149f 0x556241eb
+Output:      0x0a111414
+---------------------------
+U:-1
+34 IP:43 (inc)
+AX:-14 [0xfffffff2]  BX:0 [0x0]  CX:28 [0x1c]  
+  R-Head:0 W-Head:28 F-Head:28  RL:   
+* Stack 0: Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Stack 1: Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Mem (80):  rbdqoxxfdvxcubsmxbmwlpfqekomispjcqfhcmptakampjlfmvjirdcffpkxxcuqmsoqeaxqpovevmba
+  MeritBase:80 Bonus:8 Errors:0 Donates:0
+  Task Count (Quality): 1 (1)
+
+Input (env): 0x0f13149f 0x3308e53e 0x556241eb
+Input (buf): 0x3308e53e 0x0f13149f 0x556241eb
+Output:      0x0a111414
+---------------------------
+U:-1
+35 IP:44 (pop)
+AX:-14 [0xfffffff2]  BX:1 [0x1]  CX:28 [0x1c]  
+  R-Head:0 W-Head:28 F-Head:28  RL:   
+* Stack 0: Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Stack 1: Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Mem (80):  rbdqoxxfdvxcubsmxbmwlpfqekomispjcqfhcmptakampjlfmvjirdcffpkxxcuqmsoqeaxqpovevmba
+  MeritBase:80 Bonus:8 Errors:0 Donates:0
+  Task Count (Quality): 1 (1)
+
+Input (env): 0x0f13149f 0x3308e53e 0x556241eb
+Input (buf): 0x3308e53e 0x0f13149f 0x556241eb
+Output:      0x0a111414
+---------------------------
+U:-1
+36 IP:45 (set-flow)
+AX:-14 [0xfffffff2]  BX:0 [0x0]  CX:28 [0x1c]  
+  R-Head:0 W-Head:28 F-Head:28  RL:   
+* Stack 0: Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Stack 1: Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Mem (80):  rbdqoxxfdvxcubsmxbmwlpfqekomispjcqfhcmptakampjlfmvjirdcffpkxxcuqmsoqeaxqpovevmba
+  MeritBase:80 Bonus:8 Errors:0 Donates:0
+  Task Count (Quality): 1 (1)
+
+Input (env): 0x0f13149f 0x3308e53e 0x556241eb
+Input (buf): 0x3308e53e 0x0f13149f 0x556241eb
+Output:      0x0a111414
+---------------------------
+U:-1
+37 IP:46 (shift-l)
+AX:-14 [0xfffffff2]  BX:0 [0x0]  CX:28 [0x1c]  
+  R-Head:0 W-Head:28 F-Head:28  RL:   
+* Stack 0: Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Stack 1: Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Mem (80):  rbdqoxxfdvxcubsmxbmwlpfqekomispjcqfhcmptakampjlfmvjirdcffpkxxcuqmsoqeaxqpovevmba
+  MeritBase:80 Bonus:8 Errors:0 Donates:0
+  Task Count (Quality): 1 (1)
+
+Input (env): 0x0f13149f 0x3308e53e 0x556241eb
+Input (buf): 0x3308e53e 0x0f13149f 0x556241eb
+Output:      0x0a111414
+---------------------------
+U:-1
+38 IP:47 (if-label)
+AX:-14 [0xfffffff2]  BX:0 [0x0]  CX:28 [0x1c]  
+  R-Head:0 W-Head:28 F-Head:28  RL:   
+* Stack 0: Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Stack 1: Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Mem (80):  rbdqoxxfdvxcubsmxbmwlpfqekomispjcqfhcmptakampjlfmvjirdcffpkxxcuqmsoqeaxqpovevmba
+  MeritBase:80 Bonus:8 Errors:0 Donates:0
+  Task Count (Quality): 1 (1)
+
+Input (env): 0x0f13149f 0x3308e53e 0x556241eb
+Input (buf): 0x3308e53e 0x0f13149f 0x556241eb
+Output:      0x0a111414
+---------------------------
+U:-1
+39 IP:48 (inc)
+AX:-14 [0xfffffff2]  BX:0 [0x0]  CX:28 [0x1c]  
+  R-Head:0 W-Head:28 F-Head:28  RL:   
+* Stack 0: Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Stack 1: Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Mem (80):  rbdqoxxfdvxcubsmxbmwlpfqekomispjcqfhcmptakampjlfmvjirdcffpkxxcuqmsoqeaxqpovevmba
+  MeritBase:80 Bonus:8 Errors:0 Donates:0
+  Task Count (Quality): 1 (1)
+
+Input (env): 0x0f13149f 0x3308e53e 0x556241eb
+Input (buf): 0x3308e53e 0x0f13149f 0x556241eb
+Output:      0x0a111414
+---------------------------
+U:-1
+40 IP:49 (IO)
+AX:-14 [0xfffffff2]  BX:1 [0x1]  CX:28 [0x1c]  
+  R-Head:0 W-Head:28 F-Head:28  RL:   
+* Stack 0: Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Stack 1: Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Mem (80):  rbdqoxxfdvxcubsmxbmwlpfqekomispjcqfhcmptakampjlfmvjirdcffpkxxcuqmsoqeaxqpovevmba
+  MeritBase:80 Bonus:8 Errors:0 Donates:0
+  Task Count (Quality): 1 (1)
+
+Input (env): 0x0f13149f 0x3308e53e 0x556241eb
+Input (buf): 0x3308e53e 0x0f13149f 0x556241eb
+Output:      0x0a111414
+---------------------------
+U:-1
+41 IP:50 (set-flow)
+AX:-14 [0xfffffff2]  BX:1432502763 [0x556241eb]  CX:28 [0x1c]  
+  R-Head:0 W-Head:28 F-Head:28  RL:   
+* Stack 0: Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Stack 1: Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Mem (80):  rbdqoxxfdvxcubsmxbmwlpfqekomispjcqfhcmptakampjlfmvjirdcffpkxxcuqmsoqeaxqpovevmba
+  MeritBase:80 Bonus:8 Errors:0 Donates:0
+  Task Count (Quality): 1 (1)
+
+Input (env): 0x0f13149f 0x3308e53e 0x556241eb
+Input (buf): 0x556241eb 0x3308e53e 0x0f13149f
+Output:      0x00000001
+---------------------------
+U:-1
+42 IP:51 (get-head)
+AX:-14 [0xfffffff2]  BX:1432502763 [0x556241eb]  CX:28 [0x1c]  
+  R-Head:0 W-Head:28 F-Head:28  RL:   
+* Stack 0: Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Stack 1: Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Mem (80):  rbdqoxxfdvxcubsmxbmwlpfqekomispjcqfhcmptakampjlfmvjirdcffpkxxcuqmsoqeaxqpovevmba
+  MeritBase:80 Bonus:8 Errors:0 Donates:0
+  Task Count (Quality): 1 (1)
+
+Input (env): 0x0f13149f 0x3308e53e 0x556241eb
+Input (buf): 0x556241eb 0x3308e53e 0x0f13149f
+Output:      0x00000001
+---------------------------
+U:-1
+43 IP:52 (swap)
+AX:-14 [0xfffffff2]  BX:1432502763 [0x556241eb]  CX:51 [0x33]  
+  R-Head:0 W-Head:28 F-Head:28  RL:   
+* Stack 0: Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Stack 1: Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Mem (80):  rbdqoxxfdvxcubsmxbmwlpfqekomispjcqfhcmptakampjlfmvjirdcffpkxxcuqmsoqeaxqpovevmba
+  MeritBase:80 Bonus:8 Errors:0 Donates:0
+  Task Count (Quality): 1 (1)
+
+Input (env): 0x0f13149f 0x3308e53e 0x556241eb
+Input (buf): 0x556241eb 0x3308e53e 0x0f13149f
+Output:      0x00000001
+---------------------------
+U:-1
+44 IP:53 (if-n-equ)
+AX:-14 [0xfffffff2]  BX:51 [0x33]  CX:1432502763 [0x556241eb]  
+  R-Head:0 W-Head:28 F-Head:28  RL:   
+* Stack 0: Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Stack 1: Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Mem (80):  rbdqoxxfdvxcubsmxbmwlpfqekomispjcqfhcmptakampjlfmvjirdcffpkxxcuqmsoqeaxqpovevmba
+  MeritBase:80 Bonus:8 Errors:0 Donates:0
+  Task Count (Quality): 1 (1)
+
+Input (env): 0x0f13149f 0x3308e53e 0x556241eb
+Input (buf): 0x556241eb 0x3308e53e 0x0f13149f
+Output:      0x00000001
+---------------------------
+U:-1
+45 IP:55 (if-label)
+AX:-14 [0xfffffff2]  BX:51 [0x33]  CX:1432502763 [0x556241eb]  
+  R-Head:0 W-Head:28 F-Head:28  RL:   
+* Stack 0: Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Stack 1: Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Mem (80):  rbdqoxxfdvxcubsmxbmwlpfqekomispjcqfhcmptakampjlfmvjirdcffpkxxcuqmsoqeaxqpovevmba
+  MeritBase:80 Bonus:8 Errors:0 Donates:0
+  Task Count (Quality): 1 (1)
+
+Input (env): 0x0f13149f 0x3308e53e 0x556241eb
+Input (buf): 0x556241eb 0x3308e53e 0x0f13149f
+Output:      0x00000001
+---------------------------
+U:-1
+46 IP:56 (if-label)
+AX:-14 [0xfffffff2]  BX:51 [0x33]  CX:1432502763 [0x556241eb]  
+  R-Head:0 W-Head:28 F-Head:28  RL:   
+* Stack 0: Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Stack 1: Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Mem (80):  rbdqoxxfdvxcubsmxbmwlpfqekomispjcqfhcmptakampjlfmvjirdcffpkxxcuqmsoqeaxqpovevmba
+  MeritBase:80 Bonus:8 Errors:0 Donates:0
+  Task Count (Quality): 1 (1)
+
+Input (env): 0x0f13149f 0x3308e53e 0x556241eb
+Input (buf): 0x556241eb 0x3308e53e 0x0f13149f
+Output:      0x00000001
+---------------------------
+U:-1
+47 IP:57 (pop)
+AX:-14 [0xfffffff2]  BX:51 [0x33]  CX:1432502763 [0x556241eb]  
+  R-Head:0 W-Head:28 F-Head:28  RL:   
+* Stack 0: Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Stack 1: Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Mem (80):  rbdqoxxfdvxcubsmxbmwlpfqekomispjcqfhcmptakampjlfmvjirdcffpkxxcuqmsoqeaxqpovevmba
+  MeritBase:80 Bonus:8 Errors:0 Donates:0
+  Task Count (Quality): 1 (1)
+
+Input (env): 0x0f13149f 0x3308e53e 0x556241eb
+Input (buf): 0x556241eb 0x3308e53e 0x0f13149f
+Output:      0x00000001
+---------------------------
+U:-1
+48 IP:58 (shift-r)
+AX:-14 [0xfffffff2]  BX:0 [0x0]  CX:1432502763 [0x556241eb]  
+  R-Head:0 W-Head:28 F-Head:28  RL:   
+* Stack 0: Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Stack 1: Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Mem (80):  rbdqoxxfdvxcubsmxbmwlpfqekomispjcqfhcmptakampjlfmvjirdcffpkxxcuqmsoqeaxqpovevmba
+  MeritBase:80 Bonus:8 Errors:0 Donates:0
+  Task Count (Quality): 1 (1)
+
+Input (env): 0x0f13149f 0x3308e53e 0x556241eb
+Input (buf): 0x556241eb 0x3308e53e 0x0f13149f
+Output:      0x00000001
+---------------------------
+U:-1
+49 IP:59 (IO-Feedback)
+AX:-14 [0xfffffff2]  BX:0 [0x0]  CX:1432502763 [0x556241eb]  
+  R-Head:0 W-Head:28 F-Head:28  RL:   
+* Stack 0: Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Stack 1: Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Mem (80):  rbdqoxxfdvxcubsmxbmwlpfqekomispjcqfhcmptakampjlfmvjirdcffpkxxcuqmsoqeaxqpovevmba
+  MeritBase:80 Bonus:8 Errors:0 Donates:0
+  Task Count (Quality): 1 (1)
+
+Input (env): 0x0f13149f 0x3308e53e 0x556241eb
+Input (buf): 0x556241eb 0x3308e53e 0x0f13149f
+Output:      0x00000001
+---------------------------
+U:-1
+50 IP:60 (IO-Feedback)
+AX:-14 [0xfffffff2]  BX:252908703 [0xf13149f]  CX:1432502763 [0x556241eb]  
+  R-Head:0 W-Head:28 F-Head:28  RL:   
+* Stack 0: Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Stack 1: Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Mem (80):  rbdqoxxfdvxcubsmxbmwlpfqekomispjcqfhcmptakampjlfmvjirdcffpkxxcuqmsoqeaxqpovevmba
+  MeritBase:80 Bonus:8 Errors:0 Donates:0
+  Task Count (Quality): 1 (1)
+
+Input (env): 0x0f13149f 0x3308e53e 0x556241eb
+Input (buf): 0x0f13149f 0x556241eb 0x3308e53e
+Output:      0x00000000
+---------------------------
+U:-1
+51 IP:62 (nand)
+AX:-14 [0xfffffff2]  BX:252908703 [0xf13149f]  CX:856220990 [0x3308e53e]  
+  R-Head:0 W-Head:28 F-Head:28  RL:   
+* Stack 0: Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Stack 1: Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Mem (80):  rbdqoxxfdvxcubsmxbmwlpfqekomispjcqfhcmptakampjlfmvjirdcffpkxxcuqmsoqeaxqpovevmba
+  MeritBase:80 Bonus:8 Errors:0 Donates:0
+  Task Count (Quality): 1 (1)
+
+Input (env): 0x0f13149f 0x3308e53e 0x556241eb
+Input (buf): 0x3308e53e 0x0f13149f 0x556241eb
+Output:      0x556241eb
+---------------------------
+U:-1
+52 IP:63 (swap-stk)
+AX:-14 [0xfffffff2]  BX:-50332703 [0xfcfffbe1]  CX:856220990 [0x3308e53e]  
+  R-Head:0 W-Head:28 F-Head:28  RL:   
+* Stack 0: Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Stack 1: Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Mem (80):  rbdqoxxfdvxcubsmxbmwlpfqekomispjcqfhcmptakampjlfmvjirdcffpkxxcuqmsoqeaxqpovevmba
+  MeritBase:80 Bonus:8 Errors:0 Donates:0
+  Task Count (Quality): 1 (1)
+
+Input (env): 0x0f13149f 0x3308e53e 0x556241eb
+Input (buf): 0x3308e53e 0x0f13149f 0x556241eb
+Output:      0x556241eb
+---------------------------
+U:-1
+53 IP:64 (inc)
+AX:-14 [0xfffffff2]  BX:-50332703 [0xfcfffbe1]  CX:856220990 [0x3308e53e]  
+  R-Head:0 W-Head:28 F-Head:28  RL:   
+  Stack 0: Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+* Stack 1: Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Mem (80):  rbdqoxxfdvxcubsmxbmwlpfqekomispjcqfhcmptakampjlfmvjirdcffpkxxcuqmsoqeaxqpovevmba
+  MeritBase:80 Bonus:8 Errors:0 Donates:0
+  Task Count (Quality): 1 (1)
+
+Input (env): 0x0f13149f 0x3308e53e 0x556241eb
+Input (buf): 0x3308e53e 0x0f13149f 0x556241eb
+Output:      0x556241eb
+---------------------------
+U:-1
+54 IP:65 (add)
+AX:-14 [0xfffffff2]  BX:-50332702 [0xfcfffbe2]  CX:856220990 [0x3308e53e]  
+  R-Head:0 W-Head:28 F-Head:28  RL:   
+  Stack 0: Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+* Stack 1: Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Mem (80):  rbdqoxxfdvxcubsmxbmwlpfqekomispjcqfhcmptakampjlfmvjirdcffpkxxcuqmsoqeaxqpovevmba
+  MeritBase:80 Bonus:8 Errors:0 Donates:0
+  Task Count (Quality): 1 (1)
+
+Input (env): 0x0f13149f 0x3308e53e 0x556241eb
+Input (buf): 0x3308e53e 0x0f13149f 0x556241eb
+Output:      0x556241eb
+---------------------------
+U:-1
+55 IP:66 (push)
+AX:-14 [0xfffffff2]  BX:805888288 [0x3008e120]  CX:856220990 [0x3308e53e]  
+  R-Head:0 W-Head:28 F-Head:28  RL:   
+  Stack 0: Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+* Stack 1: Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Mem (80):  rbdqoxxfdvxcubsmxbmwlpfqekomispjcqfhcmptakampjlfmvjirdcffpkxxcuqmsoqeaxqpovevmba
+  MeritBase:80 Bonus:8 Errors:0 Donates:0
+  Task Count (Quality): 1 (1)
+
+Input (env): 0x0f13149f 0x3308e53e 0x556241eb
+Input (buf): 0x3308e53e 0x0f13149f 0x556241eb
+Output:      0x556241eb
+---------------------------
+U:-1
+56 IP:67 (swap-stk)
+AX:-14 [0xfffffff2]  BX:805888288 [0x3008e120]  CX:856220990 [0x3308e53e]  
+  R-Head:0 W-Head:28 F-Head:28  RL:   
+  Stack 0: Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+* Stack 1: Ox3008e120 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Mem (80):  rbdqoxxfdvxcubsmxbmwlpfqekomispjcqfhcmptakampjlfmvjirdcffpkxxcuqmsoqeaxqpovevmba
+  MeritBase:80 Bonus:8 Errors:0 Donates:0
+  Task Count (Quality): 1 (1)
+
+Input (env): 0x0f13149f 0x3308e53e 0x556241eb
+Input (buf): 0x3308e53e 0x0f13149f 0x556241eb
+Output:      0x556241eb
+---------------------------
+U:-1
+57 IP:68 (if-less)
+AX:-14 [0xfffffff2]  BX:805888288 [0x3008e120]  CX:856220990 [0x3308e53e]  
+  R-Head:0 W-Head:28 F-Head:28  RL:   
+* Stack 0: Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Stack 1: Ox3008e120 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Mem (80):  rbdqoxxfdvxcubsmxbmwlpfqekomispjcqfhcmptakampjlfmvjirdcffpkxxcuqmsoqeaxqpovevmba
+  MeritBase:80 Bonus:8 Errors:0 Donates:0
+  Task Count (Quality): 1 (1)
+
+Input (env): 0x0f13149f 0x3308e53e 0x556241eb
+Input (buf): 0x3308e53e 0x0f13149f 0x556241eb
+Output:      0x556241eb
+---------------------------
+U:-1
+58 IP:70 (IO-Feedback)
+AX:-14 [0xfffffff2]  BX:805888288 [0x3008e120]  CX:856220990 [0x3308e53e]  
+  R-Head:0 W-Head:28 F-Head:28  RL:   
+* Stack 0: Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Stack 1: Ox3008e120 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Mem (80):  rbdqoxxfdvxcubsmxbmwlpfqekomispjcqfhcmptakampjlfmvjirdcffpkxxcuqmsoqeaxqpovevmba
+  MeritBase:80 Bonus:8 Errors:0 Donates:0
+  Task Count (Quality): 1 (1)
+
+Input (env): 0x0f13149f 0x3308e53e 0x556241eb
+Input (buf): 0x3308e53e 0x0f13149f 0x556241eb
+Output:      0x556241eb
+---------------------------
+U:-1
+59 IP:71 (swap-stk)
+AX:-14 [0xfffffff2]  BX:1432502763 [0x556241eb]  CX:856220990 [0x3308e53e]  
+  R-Head:0 W-Head:28 F-Head:28  RL:   
+* Stack 0: Ox00000001 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Stack 1: Ox3008e120 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Mem (80):  rbdqoxxfdvxcubsmxbmwlpfqekomispjcqfhcmptakampjlfmvjirdcffpkxxcuqmsoqeaxqpovevmba
+  MeritBase:80 Bonus:64 Errors:0 Donates:0
+  Task Count (Quality): 2 (2)
+
+Input (env): 0x0f13149f 0x3308e53e 0x556241eb
+Input (buf): 0x556241eb 0x3308e53e 0x0f13149f
+Output:      0x3008e120
+---------------------------
+U:-1
+60 IP:72 (pop)
+AX:-14 [0xfffffff2]  BX:1432502763 [0x556241eb]  CX:856220990 [0x3308e53e]  
+  R-Head:0 W-Head:28 F-Head:28  RL:   
+  Stack 0: Ox00000001 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+* Stack 1: Ox3008e120 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Mem (80):  rbdqoxxfdvxcubsmxbmwlpfqekomispjcqfhcmptakampjlfmvjirdcffpkxxcuqmsoqeaxqpovevmba
+  MeritBase:80 Bonus:64 Errors:0 Donates:0
+  Task Count (Quality): 2 (2)
+
+Input (env): 0x0f13149f 0x3308e53e 0x556241eb
+Input (buf): 0x556241eb 0x3308e53e 0x0f13149f
+Output:      0x3008e120
+---------------------------
+U:-1
+61 IP:73 (push)
+AX:-14 [0xfffffff2]  BX:805888288 [0x3008e120]  CX:856220990 [0x3308e53e]  
+  R-Head:0 W-Head:28 F-Head:28  RL:   
+  Stack 0: Ox00000001 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+* Stack 1: Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Mem (80):  rbdqoxxfdvxcubsmxbmwlpfqekomispjcqfhcmptakampjlfmvjirdcffpkxxcuqmsoqeaxqpovevmba
+  MeritBase:80 Bonus:64 Errors:0 Donates:0
+  Task Count (Quality): 2 (2)
+
+Input (env): 0x0f13149f 0x3308e53e 0x556241eb
+Input (buf): 0x556241eb 0x3308e53e 0x0f13149f
+Output:      0x3008e120
+---------------------------
+U:-1
+62 IP:74 (IO)
+AX:-14 [0xfffffff2]  BX:805888288 [0x3008e120]  CX:856220990 [0x3308e53e]  
+  R-Head:0 W-Head:28 F-Head:28  RL:   
+  Stack 0: Ox00000001 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+* Stack 1: Ox3008e120 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Mem (80):  rbdqoxxfdvxcubsmxbmwlpfqekomispjcqfhcmptakampjlfmvjirdcffpkxxcuqmsoqeaxqpovevmba
+  MeritBase:80 Bonus:64 Errors:0 Donates:0
+  Task Count (Quality): 2 (2)
+
+Input (env): 0x0f13149f 0x3308e53e 0x556241eb
+Input (buf): 0x556241eb 0x3308e53e 0x0f13149f
+Output:      0x3008e120
+---------------------------
+U:-1
+63 IP:75 (if-less)
+AX:-14 [0xfffffff2]  BX:252908703 [0xf13149f]  CX:856220990 [0x3308e53e]  
+  R-Head:0 W-Head:28 F-Head:28  RL:   
+  Stack 0: Ox00000001 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+* Stack 1: Ox3008e120 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Mem (80):  rbdqoxxfdvxcubsmxbmwlpfqekomispjcqfhcmptakampjlfmvjirdcffpkxxcuqmsoqeaxqpovevmba
+  MeritBase:80 Bonus:512 Errors:0 Donates:0
+  Task Count (Quality): 3 (3)
+
+Input (env): 0x0f13149f 0x3308e53e 0x556241eb
+Input (buf): 0x0f13149f 0x556241eb 0x3308e53e
+Output:      0x3008e120
+---------------------------
+U:-1
+64 IP:76 (IO)
+AX:-14 [0xfffffff2]  BX:252908703 [0xf13149f]  CX:856220990 [0x3308e53e]  
+  R-Head:0 W-Head:28 F-Head:28  RL:   
+  Stack 0: Ox00000001 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+* Stack 1: Ox3008e120 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Mem (80):  rbdqoxxfdvxcubsmxbmwlpfqekomispjcqfhcmptakampjlfmvjirdcffpkxxcuqmsoqeaxqpovevmba
+  MeritBase:80 Bonus:512 Errors:0 Donates:0
+  Task Count (Quality): 3 (3)
+
+Input (env): 0x0f13149f 0x3308e53e 0x556241eb
+Input (buf): 0x0f13149f 0x556241eb 0x3308e53e
+Output:      0x3008e120
+---------------------------
+U:-1
+65 IP:77 (inc)
+AX:-14 [0xfffffff2]  BX:856220990 [0x3308e53e]  CX:856220990 [0x3308e53e]  
+  R-Head:0 W-Head:28 F-Head:28  RL:   
+  Stack 0: Ox00000001 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+* Stack 1: Ox3008e120 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Mem (80):  rbdqoxxfdvxcubsmxbmwlpfqekomispjcqfhcmptakampjlfmvjirdcffpkxxcuqmsoqeaxqpovevmba
+  MeritBase:80 Bonus:512 Errors:0 Donates:0
+  Task Count (Quality): 3 (3)
+
+Input (env): 0x0f13149f 0x3308e53e 0x556241eb
+Input (buf): 0x3308e53e 0x0f13149f 0x556241eb
+Output:      0x0f13149f
+---------------------------
+U:-1
+66 IP:79 (nop-A)
+AX:-14 [0xfffffff2]  BX:856220991 [0x3308e53f]  CX:856220990 [0x3308e53e]  
+  R-Head:0 W-Head:28 F-Head:28  RL:   
+  Stack 0: Ox00000001 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+* Stack 1: Ox3008e120 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000 Ox00000000
+  Mem (80):  rbdqoxxfdvxcubsmxbmwlpfqekomispjcqfhcmptakampjlfmvjirdcffpkxxcuqmsoqeaxqpovevmba
+  MeritBase:80 Bonus:512 Errors:0 Donates:0
+  Task Count (Quality): 3 (3)
+
+Input (env): 0x0f13149f 0x3308e53e 0x556241eb
+Input (buf): 0x3308e53e 0x0f13149f 0x556241eb
+Output:      0x0f13149f
+---------------------------
+  MeritBase:78 Bonus:1 Errors:0 Donates:0
+  Task Count (Quality): 0 (0)
+
+
+# Final Memory: rbdqoxxfdvxcubsmxbmwlpfqekomispjcqfhcmptakampjlfmvjirdcffpkxxcuqmsoqeaxqpovevmba
+# Offspring Memory: rbdqoxxfdvxcubsmxbmwlpfqekomispjcqfhcmptakampjlfmvjirdcffpkxxcuqmsoqeaxqpovevmba
