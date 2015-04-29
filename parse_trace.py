@@ -35,8 +35,8 @@ def tracefile_iter(handle, line=None):
         n, line = gen.next()
         try:
             tokens = line.split()
-            data['idx'] = tokens[0].strip()
-            data['IP'] = tokens[1].split(':')[1].strip()
+            data['idx'] = int(tokens[0].strip())
+            data['IP'] = int(tokens[1].split(':')[1].strip())
             data['inst'] = tokens[2].strip(' ()')
         except Exception as e:
             perror(n, 'IP line', line)
@@ -44,18 +44,18 @@ def tracefile_iter(handle, line=None):
         n, line = gen.next()
         try:
             tokens = line.split()
-            data['AX'] = tokens[0].split(':')[1].strip()
-            data['BX'] = tokens[2].split(':')[1].strip()
-            data['CX'] = tokens[4].split(':')[1].strip()
+            data['AX'] = int(tokens[0].split(':')[1].strip())
+            data['BX'] = int(tokens[2].split(':')[1].strip())
+            data['CX'] = int(tokens[4].split(':')[1].strip())
         except Exception as e:
             perror(n, 'register line', line)
 
         n, line = gen.next()
         try:
             tokens = line.split()
-            data['R-Head'] = tokens[0].split(':')[1].strip()
-            data['W-Head'] = tokens[1].split(':')[1].strip()
-            data['F-Head'] = tokens[2].split(':')[1].strip()
+            data['R-Head'] = int(tokens[0].split(':')[1].strip())
+            data['W-Head'] = int(tokens[1].split(':')[1].strip())
+            data['F-Head'] = int(tokens[2].split(':')[1].strip())
         except Exception as e:
             perror(n, '*-Head line', line)
 
@@ -68,15 +68,16 @@ def tracefile_iter(handle, line=None):
                 data['cur_stack'] = 0
             else:
                 data['cur_stack'] = 1
-            data['S0'] = s0_tokens[1].strip().split()
-            data['S1'] = s1_tokens[1].strip().split()
+            data['S0'] = [int('0' + i[1:], 16) for i in s0_tokens[1].strip().split()]
+            data['S1'] = [int('0' + i[1:], 16) for i in s1_tokens[1].strip().split()]
         except Exception as e:
-            perror(n1 + ',' + n2, 'stack contents', s0_line)
+            print e 
+            perror(str(n0) + ',' + str(n1), 'stack contents', s0_line)
 
         n, line = gen.next()
         try:
             tokens = line.split(':')
-            data['len'] = tokens[0].strip().split()[1].strip('()')
+            data['len'] = int(tokens[0].strip().split()[1].strip('()'))
             data['mem'] = tokens[1].strip()
         except Exception as e:
             perror(n, 'mem line', line)
@@ -84,10 +85,10 @@ def tracefile_iter(handle, line=None):
         n, line = gen.next()
         try:
             tokens = line.split()
-            data['MeritBase'] = tokens[0].split(':')[1].strip()
-            data['Bonus'] = tokens[1].split(':')[1].strip()
-            data['Errors'] = tokens[2].split(':')[1].strip()
-            data['Donates'] = tokens[3].split(':')[1].strip()
+            data['MeritBase'] = int(tokens[0].split(':')[1].strip())
+            data['Bonus'] = int(tokens[1].split(':')[1].strip())
+            data['Errors'] = int(tokens[2].split(':')[1].strip())
+            data['Donates'] = int(tokens[3].split(':')[1].strip())
         except Exception as e:
             perror(n, 'Merit line', line)
 
@@ -97,7 +98,7 @@ def tracefile_iter(handle, line=None):
         n, line = gen.next()
         tokens = line.strip().split(':')
         try:
-            data['input_env'] = tokens[1].strip().split()
+            data['input_env'] = [int(i, 16) for i in tokens[1].strip().split()]
         except IndexError as e:
             # No data
             data['input_env'] = []
@@ -107,7 +108,7 @@ def tracefile_iter(handle, line=None):
         n, line = gen.next()
         tokens = line.strip().split(':')
         try:
-            data['input_buf'] = tokens[1].strip().split()
+            data['input_buf'] = [int(i, 16) for i in tokens[1].strip().split()]
         except IndexError as e:
             # No data
             data['input_buf'] = []
@@ -117,11 +118,12 @@ def tracefile_iter(handle, line=None):
         n, line = gen.next()
         tokens = line.strip().split(':')
         try:
-            data['output'] = tokens[1].strip().split()
+            data['output'] = tokens[1].strip()
         except IndexError as e:
             # No data, put in None
             data['output'] = None
         except Exception as e:
+            print e
             perror(n, 'output line', line)
 
         n, line = gen.next()
